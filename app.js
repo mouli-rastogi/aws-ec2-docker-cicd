@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('If you are seeing this, EC2 deployment succeeded.');
+  res.send('If you are seeing this, EC2 deployment succeeded and containers are running');
 });
 
 app.get('/', (req, res) => {
