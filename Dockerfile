@@ -7,6 +7,8 @@ RUN npm install
 
 COPY . .
 
+RUN apt-get update && at-get install -y curl
+
 EXPOSE 3000
 
 HEALTHCHECK CMD curl --fail http://localhost:300/health ||exit 1
