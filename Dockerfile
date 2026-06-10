@@ -9,4 +9,6 @@ COPY . .
 
 EXPOSE 3000
 
+HEALTHCHECK CMD curl --fail http://localhost:300/health ||exit 1
+
 CMD ["node", "app.js"]
